@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xsmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>NUnit Test Method</Title>
+            <Author>DjK</Author>
+            <Description>Inserts a template for NUnit test method.</Description>
+            <Shortcut>nutest</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+[Test]
+[Ignore("Empty test template")]
+public void $UnitOfWorkName$_$ScenarioUnderTest$_$ExpectedBehavior$()
+{
+    // Arrange
+
+    // Act
+
+    // Assert
+
+}
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>UnitOfWorkName</ID>
+                    <ToolTip>Name the unit of work to be tested.</ToolTip>
+                    <Default>UnitOfWorkName</Default>
+                </Literal>
+                <Literal>
+                    <ID>ScenarioUnderTest</ID>
+                    <ToolTip>Describe scenario under test.</ToolTip>
+                    <Default>ScenarioUnderTest</Default>
+                </Literal>
+                <Literal>
+                    <ID>ExpectedBehavior</ID>
+                    <ToolTip>Describe the expected behavior.</ToolTip>
+                    <Default>ExpectedBehavior</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>NUnit Async Test Method</Title>
+            <Author>DjK</Author>
+            <Description>Inserts a template for NUnit async test method.</Description>
+            <Shortcut>nutesta</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+[Test]
+[Ignore("Empty test template")]
+public async Task $UnitOfWorkName$_$ScenarioUnderTest$_$ExpectedBehavior$()
+{
+    // Arrange
+
+    // Act
+
+    // Assert
+
+}
+                ]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>System.Threading.Tasks</Namespace>
+                </Import>
+            </Imports>
+            <Declarations>
+                <Literal>
+                    <ID>UnitOfWorkName</ID>
+                    <ToolTip>Name the unit of work to be tested.</ToolTip>
+                    <Default>UnitOfWorkName</Default>
+                </Literal>
+                <Literal>
+                    <ID>ScenarioUnderTest</ID>
+                    <ToolTip>Describe scenario under test.</ToolTip>
+                    <Default>ScenarioUnderTest</Default>
+                </Literal>
+                <Literal>
+                    <ID>ExpectedBehavior</ID>
+                    <ToolTip>Describe the expected behavior.</ToolTip>
+                    <Default>ExpectedBehavior</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
